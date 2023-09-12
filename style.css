@@ -1,0 +1,46 @@
+* {
+    font-family: Calibri;
+    font-size: calc(100vh / 15);
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    gap: 1px;
+}
+
+button {
+    background-color: rgb(38, 123, 120);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(28, 90, 88);
+}
+
+input {
+    grid-column: span 5;
+}
+
+.dark {
+    background-color: rgba(50, 50, 50, 2);
+}
+
+.dark:hover {
+    background-color: rgba(75, 75, 75, 2);
+}
+
+#buttonToEvaluateExpression {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 5;
+}
